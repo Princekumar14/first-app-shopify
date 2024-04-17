@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "5693a997fa0932f91374b3903d93ca3e"
+name = "first-app"
+handle = "first-app-1178"
+application_url = "https://contain-exempt-mothers-isp.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "princetwotechies.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,write_products"
+
+[auth]
+redirect_urls = [
+  "https://contain-exempt-mothers-isp.trycloudflare.com/auth/callback",
+  "https://contain-exempt-mothers-isp.trycloudflare.com/auth/shopify/callback",
+  "https://contain-exempt-mothers-isp.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
